@@ -56,6 +56,7 @@ public class Main {
                     System.out.println("1.Add Events");
                     System.out.println("2. Coming Events");
                     System.out.println("3.Book your Seat");
+                    System.out.println("4.View Profile");
                     String choose = scan.nextLine();
                     switch(Integer.parseInt(choose))
                     {
@@ -119,9 +120,29 @@ public class Main {
                             else {
                                 System.out.println("Oops Seats Gets full!! Better Luck next Time.");
                             }
+                        case 4 :
+                            UserDao.displayData(Integer.parseInt(idCheck));
+                            System.out.print("Do you want to update your Profile ? Click Yes for Updation : ");
+                            String yesOrNo = scan.nextLine();
+                            //System.out.println();
+                            if(yesOrNo.equalsIgnoreCase("Yes"))
+                            {
+                                System.out.print("Enter Your New Name :");
+                                String changingName = scan.nextLine();
+                                System.out.println();
+                                System.out.print("Enter Your New College Name : ");
+                                String changingCollegeName = scan.nextLine();
+                                System.out.println();
+                                System.out.println("Enter Your New Department Name : ");
+                                String changingDepartmentName = scan.nextLine();
+                                System.out.println();
+                                System.out.print("Click Ok for Confirm : ");
+                                String confirmMessage = scan.nextLine();
+                                if(confirmMessage.equalsIgnoreCase("Ok")) {
+                                    UserDao.updateProfile(changingName, changingCollegeName, changingDepartmentName, Integer.parseInt(idCheck));
+                                }
 
-
-
+                            }
                     }
 
                 }

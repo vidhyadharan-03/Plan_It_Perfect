@@ -40,4 +40,6 @@ public class Booking {
     public int getSeats() {
         return seats;
     }
+    
+
 }
