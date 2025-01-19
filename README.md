@@ -1,7 +1,7 @@
 # Plan It Perfect - Event Management System
 
 ## Project Overview
-**Plan It Perfect** is a Java-based event management system designed to streamline the process of hosting and participating in events. This project provides a backend solution where users can manage their accounts, view upcoming events, and book slots for the events of their choice. Event organizers can create and manage their events, while participants can book a slot to attend the event. Each user can only book a slot for each event but can book multiple seats within the event's available capacity.
+**Plan It Perfect** is a Java-based event management system designed to streamline the process of hosting and participating in events. This project provides a backend solution where users can manage their accounts, view upcoming events, and book slots for the events of their choice. Event organizers can create and manage their events, while participants can book a slot to attend the event. Each user can only book a slot for each event but can book multiple seats within the event's available capacity. The system allows users to update their profiles, ensuring that their information is always current. Additionally, users can view their booking history to keep track of the events they have registered for and the details of their bookings.
 
 ## Features
 - **User Registration & Login**: Allows users to create an account and log in securely to access the system. Once logged in, users can interact with the event functionalities.
