@@ -57,6 +57,7 @@ public class Main {
                     System.out.println("2. Coming Events");
                     System.out.println("3.Book your Seat");
                     System.out.println("4.View Profile");
+                    System.out.println("5.History");
                     String choose = scan.nextLine();
                     switch(Integer.parseInt(choose))
                     {
@@ -120,6 +121,7 @@ public class Main {
                             else {
                                 System.out.println("Oops Seats Gets full!! Better Luck next Time.");
                             }
+                            break;
                         case 4 :
                             UserDao.displayData(Integer.parseInt(idCheck));
                             System.out.print("Do you want to update your Profile ? Click Yes for Updation : ");
@@ -143,6 +145,10 @@ public class Main {
                                 }
 
                             }
+                            break;
+                        case 5 :
+                            BookingDao.showSpecificBooking(Integer.parseInt(idCheck));
+
                     }
 
                 }
